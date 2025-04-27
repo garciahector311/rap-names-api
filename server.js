@@ -1,6 +1,9 @@
 const express = require('express')//sets up express framework
 const app = express()//allows the variable 'app' to access the express files 
+const cors = require('cors')
 const PORT = 8000
+
+app.use(cors())//install cors to allow local requests to access server
 
 const rappers = {
         '21 savage' : {
